@@ -1,6 +1,6 @@
 import requests
 
-YOUTUBE_API_KEY = 'AIzaSyAZAOwH88SEB-6B6KkhUGhMX6jxu_tR7CM'
+API_KEY = os.environ.get('YOUTUBE_API_KEY')
 
 search = input('Enter what you want to search: ')
 
