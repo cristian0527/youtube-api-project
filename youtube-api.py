@@ -1,4 +1,5 @@
 import requests
+import os
 
 API_KEY = os.environ.get('YOUTUBE_API_KEY')
 
@@ -12,7 +13,7 @@ params = {
   'q': search,
   'type': 'video',
   'maxResults': 5,
-  'key': YOUTUBE_API_KEY
+  'key': API_KEY
 }
 
 response = requests.get(url, params=params)
